@@ -5,6 +5,10 @@ import java.util.List;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 
+/**
+ * 
+ * @author linal
+ */
 public interface GadgetInterface extends MongoRepository<Gadget, Integer> {
     //filtra los productos por una cadena de caracteres
     @Query("{ description : { $regex : ?0 } }")

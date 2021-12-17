@@ -8,8 +8,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.util.Date;
 import java.util.Map;
 
+/**
+ * 
+ * @author linal
+ */
 @Document(collection = "orders")
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

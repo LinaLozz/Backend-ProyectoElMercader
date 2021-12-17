@@ -1,16 +1,17 @@
 package com.reto4.controller;
 
-import com.reto4.model.Gadget;
 import com.reto4.model.Order;
 import com.reto4.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * 
+ * @author linal
+ */
 @RestController
 @RequestMapping("/api/order")
 @CrossOrigin("*")
@@ -65,5 +66,4 @@ public class OrderController {
     public  List<Order> getByRegisterDayAndSalesManId(@PathVariable("registerDay") String registerDay, @PathVariable("id")Integer id){
         return orderService.getRegisterDayAndSalesManId(registerDay, id);
     }
-
 }

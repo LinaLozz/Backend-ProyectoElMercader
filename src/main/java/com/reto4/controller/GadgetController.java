@@ -5,10 +5,13 @@ import com.reto4.service.GadgetService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * 
+ * @author linal
+ */
 @RestController
 @RequestMapping("/api/gadget/")
 @CrossOrigin("*")

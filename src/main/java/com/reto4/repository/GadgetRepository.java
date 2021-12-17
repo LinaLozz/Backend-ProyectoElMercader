@@ -4,10 +4,13 @@ import com.reto4.repository.crud.GadgetInterface;
 import com.reto4.model.Gadget;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * 
+ * @author linal
+ */
 @Repository
 public class GadgetRepository {
     @Autowired

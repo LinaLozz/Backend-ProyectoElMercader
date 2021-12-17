@@ -4,10 +4,13 @@ import com.reto4.model.User;
 import com.reto4.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * 
+ * @author linal
+ */
 @Service
 public class UserService {
     @Autowired

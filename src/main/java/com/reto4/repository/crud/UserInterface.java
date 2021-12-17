@@ -3,10 +3,13 @@ package com.reto4.repository.crud;
 import com.reto4.model.User;
 import java.util.List;
 import org.springframework.data.mongodb.repository.MongoRepository;
-
 import java.util.Optional;
 import org.springframework.data.mongodb.repository.Query;
 
+/**
+ * 
+ * @author linal
+ */
 public interface UserInterface extends MongoRepository<User, Integer> {
     @Query("{email:?0}")
     Optional<User> findByEmail(String email);
